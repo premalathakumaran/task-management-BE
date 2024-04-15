@@ -4,3 +4,17 @@ This Task Management System is a web application developed using React.js for th
 
 Postman link
 https://documenter.getpostman.com/view/30449043/2s9YyqjNTJ
+
+🗝️ Sample User Logins:
+
+Employee Login:
+
+Email : employee1@gmail.com
+
+Password : Password@123
+
+Customer Login :
+
+Email : customer1@gmail.com
+
+Password : Password@123
