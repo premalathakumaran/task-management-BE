@@ -21,7 +21,8 @@ const userSchema = new mongoose.Schema({
 
     mobile: {
         type: Number,
-        required: true,
+        // required: true,
+        required: false,
     },
      work: {
          type: String,
@@ -46,7 +47,8 @@ const userSchema = new mongoose.Schema({
     
     desc: {
         type: String,
-        required: true,
+        // required: true,
+        required: false,
     },
 
     datecreated:Date,
