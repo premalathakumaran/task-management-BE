@@ -1,19 +1,38 @@
 
 
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+
+// const taskSchema = new mongoose.Schema({
+//     title: { type: String, required: true },
+//     description: { type: String, required: true },
+//     createdBy: { type: mongoose.Schema.Types.ObjectId, required: true },
+//     assignedTo: {  type: mongoose.Schema.Types.ObjectId },
+//     work :{type:String , },
+//     productUrl:{type:String, },
+//     status: { type: String, default: 'Pending' },
+//     createdAt: { type: Date, default: Date.now() },
+
+
+// })
+
+// const taskModel = mongoose.model("Tasks",taskSchema)
+// export default taskModel
+
+
+// models/task.js
+import mongoose from 'mongoose';
 
 const taskSchema = new mongoose.Schema({
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    createdBy: { type: mongoose.Schema.Types.ObjectId, required: true },
-    assignedTo: {  type: mongoose.Schema.Types.ObjectId },
-    work :{type:String , },
-    productUrl:{type:String, },
-    status: { type: String, default: 'Pending' },
-    createdAt: { type: Date, default: Date.now() },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  createdBy: { type: mongoose.Schema.Types.ObjectId, required: false },
+  assignedTo: { type: mongoose.Schema.Types.ObjectId },
+  work: { type: String },
+  productUrl: { type: String },
+  status: { type: String, default: 'Pending' },
+  createdAt: { type: Date, default: Date.now() },
+});
 
+const taskModel = mongoose.model("Tasks", taskSchema);
 
-})
-
-const taskModel = mongoose.model("Tasks",taskSchema)
-export default taskModel
+export default taskModel;
