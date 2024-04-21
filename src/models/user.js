@@ -7,10 +7,10 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   mobile: { type: Number, required: false },
-  work: { type: String, trim: true },
+  work: { type: String, trim: false },
   role: { type: String, default: 'user' },
   add: { type: String },
-  status: { type: String, required: [true, "Status is Required"], enum: ['Active', 'InActive'], default: 'Active' },
+  status: { type: String, required: [false, "Status is Required"], enum: ['Active', 'InActive'], default: 'Active' },
   desc: { type: String, required: false },
   datecreated: Date,
   dateUpdated: Date
