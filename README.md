@@ -28,9 +28,9 @@ Backend Deployment link :https://task-management-be-7-suj5.onrender.com
 
 
 
-To Get all task: https://task-management-be-6-lc1k.onrender.com/task/tasks
+To Get all task:  https://task-management-be-7-suj5.onrender.com/task/tasks
 
 
 
 
-Get User Data : https://task-management-be-6-lc1k.onrender.com/user/getdata
+Get User Data :   https://task-management-be-7-suj5.onrender.com/user/getdata
